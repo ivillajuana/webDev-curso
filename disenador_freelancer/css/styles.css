@@ -97,7 +97,7 @@ cursor: pointer;
 /* UTILIDADES */
 
 .w-100 {
-  width: 100%;
+  flex: 0 0 100px; 
 }
 
 .alinear-derecha {
@@ -274,7 +274,7 @@ cursor: pointer;
 }
 
 .campo textarea {
-  height: 20rem;
+  height: 17rem;
 }
 
 .input-text {
