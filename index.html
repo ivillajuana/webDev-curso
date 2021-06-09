@@ -7,7 +7,7 @@
     <link rel="preload" href="css/normalize.css" as="style"> 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preload" href="css/styles.css" as="style"> 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Web Development</title>
   </head>
 
@@ -18,20 +18,52 @@
       <a href="#">backend</a>
     </nav>
 
-    <main>
-      <section>
-        <h1>Inicio</h1>
+    <main class="main">
+      <section class="proyectos">
+        <h2>Mis proyectos:</h2>
         <p>Esta página muestra una lista de los proyectos trabajados durante el 
         curso de desarrollo Web.</p> 
         <p>La idea es ir mejorando el diseño de esta página y añadir más elementos
         conforme aprenda más cosas en HTML, CSS y JS.</p>
         <p>De momento, solo pondré una lista con los proyectos que he realizado 
         hasta el momento:</p>
-        <ul>
-          <li><a href="./disenador_freelancer/index.html">Página Freelancer</a></li>
-          <li><a href="./frontend_store/index.html">Tienda en línea</a></li>
-        </ul>
-      </section>
+
+        <div class="grid">
+          <div class="proyecto">
+              <img class="proyecto__imagen" src="./img/proyecto01.png" alt="imagen de proyecto">
+            <div class="proyecto__info">
+              <p class="proyecto__nombre">
+                <a href="./disenador_freelancer/index.html" target="_blank">
+                  Diseñador Freelancer
+                </a>
+              </p>
+              <p class="proyecto__descripcion">Diseño sencillo para una página de negocio freelance.</p>
+            </div> <!-- .proyecto__info -->
+          </div> <!-- .proyecto -->
+
+          <div class="proyecto">
+            <a href="./frontend_store/index.html" target="_blank">
+              <img class="proyecto__imagen" src="./img/proyecto02.png" alt="imagen de proyecto">
+            </a>
+            <div class="proyecto__info">
+              <p class="proyecto__nombre">FrontEnd Store</p>
+              <p class="proyecto__descripcion">Diseño FrontEnd para una tienda de playeras online.</p>
+            </div> <!-- .proyecto__info -->
+          </div> <!-- .proyecto -->
+
+          <div class="proyecto">
+            <a href="./blog_cafe/index.html" target="_blank">
+              <img class="proyecto__imagen" src="#" alt="imagen de proyecto">
+            </a>
+            <div class="proyecto__info">
+              <p class="proyecto__nombre">Blog Café</p>
+              <p class="proyecto__descripcion">Diseño de un blog para una empresa cafetalera.</p>
+            </div> <!-- .proyecto__info -->
+          </div> <!-- .proyecto -->
+
+        </div> <!-- .grid -->
+
+      </section> <!-- .proyectos -->
     </main>
 
     <section class="formulario">

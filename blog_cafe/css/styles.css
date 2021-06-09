@@ -1,0 +1,15 @@
+html {
+  font-size: 62.5%; /* 1 rem = 10px*/
+  box-sizing: border-box; /* Box Model Hack*/
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px; /* 1 rem = 16 px*/
+}
+
+
+

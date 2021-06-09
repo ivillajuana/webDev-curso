@@ -1,6 +1,13 @@
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* GLOBALES */
 
 body {
   /* 1rem = 16px */
@@ -8,4 +15,61 @@ body {
 }
 
 
+p {
+  font-size: 1.2rem;
+  margin: 0 auto;
+}
 
+/* GRID */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  margin: 2rem auto 0 auto;
+}
+
+@media(min-width: 768px) {
+    .grid{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 2rem;
+    }
+}
+
+/* PROYECTOS */
+
+.proyectos {
+  margin-right: 2rem;
+}
+
+.proyecto {
+  background-color: #101010;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.proyecto__imagen {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.proyecto__info {
+  background-color: #383838;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  padding: 0 1rem 1rem;
+  margin: 0, 1rem;
+}
+
+.proyecto__nombre {
+  color: #FFF;
+  font-size: 2.2rem;
+}
+
+.proyecto__descripcion {
+  color: #FFF;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-top: 1rem;
+}

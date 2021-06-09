@@ -233,12 +233,16 @@ h3 {
 
 /* PAGINA DEL PRODUCTO */
 
-@media(min-width: px) {
+@media(min-width: 768px) {
     .camisa {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       column-gap: 2rem;
     }
+}
+
+::placeholder {
+  color: var(--blanco);
 }
 
 .formulario {
@@ -259,6 +263,10 @@ h3 {
   font-family: Arial, Helvetica, sans-serif;
   padding: 1rem;
   appearance: none; /* elimina flecha en el selector de talla*/
+}
+
+.formulario__opcion {
+  color: var(--primarioOscuro);
 }
 
 .formulario__submit {
