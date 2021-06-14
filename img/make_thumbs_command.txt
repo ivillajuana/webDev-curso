@@ -1,0 +1,1 @@
+convert -thumbnail 200 proyecton.png  proyecto0n.png
